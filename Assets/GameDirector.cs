@@ -26,7 +26,7 @@ public class GameDirector : MonoBehaviour
     {
         this.distance += 1;
         this.distanceText.GetComponent<TextMeshProUGUI>().text =
-            this.distance.ToString("D7") + "km";
+            this.distance.ToString("D6") + "km";
 
         this.timeGauge.GetComponent<Image>().fillAmount -= 0.00016667f;
 

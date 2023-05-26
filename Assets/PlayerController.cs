@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     
+    
     void Start()
     {
         Application.targetFrameRate = 60;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(-0.1f, 0, 0);
+            
         }
         if (Input.GetKey(KeyCode.S))
         {
