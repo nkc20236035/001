@@ -14,6 +14,9 @@ public class ShotContllore : MonoBehaviour
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            transform.Translate(0.1f, 0, 0);
+        }
     }
 }
