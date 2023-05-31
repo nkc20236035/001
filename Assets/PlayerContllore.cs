@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class PlayerContllore : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator anim;
+
     void Start()
     {
         Application.targetFrameRate = 60;
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        float y = Input.GetAxisRaw("Vertical");
+
+        if ( y == 0)
+        {
+            anim.Play("Char");
+        }
+
         if(Input.GetKey(KeyCode.W))
         {
             transform.Translate(-0.1f, 0, 0);
+            anim.Play("PlayerL");
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -24,6 +33,7 @@ public class PlayerContllore : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate( 0.1f , 0 , 0);
+            anim.Play("PlayerR");
         }
         if (Input.GetKey(KeyCode.D))
         {

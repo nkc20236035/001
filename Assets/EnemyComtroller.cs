@@ -10,8 +10,8 @@ public class EnemyComtroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.player = GameObject.Find("MyChar_0");
-        this.shot = GameObject.Find("MyShot_0");
+        this.player = GameObject.Find("Player");
+        this.shot = GameObject.Find("Shot");
     }
 
     // Update is called once per frame

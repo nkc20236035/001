@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7012330599322342900}
   - component: {fileID: 6445772012291248883}
   m_Layer: 0
-  m_Name: MyShot_0
+  m_Name: Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1623078742, guid: 1c97cdf2345c79143acc076c1acdbe15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

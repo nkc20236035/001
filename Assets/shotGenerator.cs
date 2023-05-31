@@ -9,7 +9,7 @@ public class shotDirector : MonoBehaviour
 
     void Start()
     {
-        this.player = GameObject.Find("MyChar_0");
+        this.player = GameObject.Find("Player");
     }
 
     void Update()
