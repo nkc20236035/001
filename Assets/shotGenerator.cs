@@ -6,11 +6,13 @@ public class shotDirector : MonoBehaviour
 {
     public GameObject shotPrefab;
     GameObject player;
+    GameObject director;
 
     void Start()
     {
         this.player = GameObject.Find("Player");
     }
+
 
     void Update()
     {

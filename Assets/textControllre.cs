@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shot : MonoBehaviour
+public class textControllre : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,11 +13,10 @@ public class shot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, 0.1f, 0);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destroy(gameObject);
+        transform.Translate(0.01f,0,0);
+        if (transform.position.x >48)
+        {
+            transform.position = new Vector3(0,0,0);
+        }
     }
 }
